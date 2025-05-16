@@ -1,28 +1,66 @@
-Coffee Shop Beverage Customizer - Decorator Pattern
+# ☕ Coffee Shop Beverage Customizer
 
-Overview:
-This project demonstrates the Decorator Design Pattern by modeling a customizable beverage system for a coffee shop. 
-Instead of creating multiple subclasses for every drink combination, we use decorators to wrap base drinks with optional ingredients.
+This project demonstrates the **Decorator Design Pattern** in Python by simulating a coffee shop beverage system. It allows customers to build drinks like espresso or tea and dynamically customize them with ingredients like milk, caramel, and whipped cream.
 
-Structure:
-- beverage.py: Abstract base class defining the interface for beverages.
-- espresso.py: Concrete class implementing a base drink.
-- decorator.py: Abstract class for all condiment decorators.
-- milk.py, caramel.py: Concrete decorators that modify behavior of wrapped beverages.
-- main.py: Demonstrates creating and customizing a beverage order.
+---
 
-How to Run:
-1. Save all files in the same folder.
-2. Open terminal and navigate to that folder.
-3. Run the program with:
+## 🛠️ Technologies Used
 
-   python main.py
+- Python 3.x  
+- Object-Oriented Programming  
+- Decorator Design Pattern
 
-Expected Output:
-Displays the base beverage and the final decorated order with total cost.
+---
 
-Example:
-Base: Espresso = $2.00  
-Final Order: Espresso, Milk, Caramel = $3.20
+## 🧠 Design Pattern: Decorator
 
-Author: Isa Zeynalov
+The **Decorator Pattern** allows for behavior to be added to individual objects dynamically without affecting the behavior of other objects from the same class. This is ideal for creating customizable beverages without needing a subclass for every combination.
+
+---
+
+## 📁 Project Structure
+
+- `beverage.py` – Abstract base class for all beverages  
+- `espresso.py` – Concrete base class representing espresso  
+- `decorator.py` – Abstract base class for all condiment decorators  
+- `milk.py` – Adds milk to a beverage  
+- `caramel.py` – Adds caramel to a beverage  
+- `main.py` – Composes and prints final customized beverage  
+- `README.md` – Project documentation
+
+---
+
+## 🚀 Features
+
+- Create base beverages like espresso  
+- Add ingredients dynamically using decorators  
+- Calculate final cost and description  
+- Simple, extendable class structure
+
+---
+
+## 📌 Sample Output
+
+```
+
+Base: Espresso = \$2.00
+Final Order: Espresso, Milk, Caramel = \$3.20
+
+````
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/coffee-shop-beverage-customizer.git
+cd coffee-shop-beverage-customizer
+````
+
+2. Run the main script:
+
+```bash
+python main.py
+```
